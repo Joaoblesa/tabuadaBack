@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="titulo">
-        <h1>TABUADA</h1>
+        <h1>TABUADA js</h1>
     </div>
     
     <div class="main">
@@ -19,10 +19,38 @@
         <div class="botao">
             <button id="calcular">calcular</button>
         </div>
+
+        <div id="resultado" class="resultado">
+        </div>
     </div>
 
+
     <script>
-        
+
+         const inputMultiplicador = document.getElementById('multiplicador');
+        const botaoCalcular = document.getElementById('calcular');
+        const divResultado = document.getElementById('resultado');
+
+        botaoCalcular.addEventListener('click', function() {
+
+            let numero = inputMultiplicador.value;
+
+            if (numero === '' || isNaN(numero)) {
+                divResultado.innerHTML = 'não é um número válido';
+                return;
+            }
+
+           
+            numero = Number(numero);
+            divResultado.innerHTML = '';
+
+            let tabuada = '';
+            for (let i = 1; i <= 5; i++) {
+                tabuada += `${numero} x ${i} = ${numero * i} <br>`;
+            }
+
+            divResultado.innerHTML = tabuada;
+        });
     </script>
     
 </body>
