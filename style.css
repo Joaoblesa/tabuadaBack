@@ -19,11 +19,13 @@ body {
     border: 3px solid #fd0303;
     margin-top: 50px;
     border-radius: 8px;
-    background-image: url(./img/chuva-de-wallpapers-do-spfc-v0-r0vc9vd5qvuc1.jpg);
+    background-image: url(./img/38debf1e173c9dacf9d5c3c22a6d4e9d.jpg);
     background-size: cover;
     background-position: center;
   }
   
   .digite, .botao, .resultado {
     margin: 10px 0;
+    color: #fd0303;
+    font-weight: bold;
   }
