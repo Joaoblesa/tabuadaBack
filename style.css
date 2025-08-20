@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    justify-content: space-between;
+    display: flex;
+    justify-items: center;
+    margin: 15px;
+}
+
+
+.main {
+    display: flex;
+    justify-items: center;
+}
+
+.digite {
+    display: flex;
+    justify-items: center;
+    margin: 15px;
+}
+.botao {
+    display: flex;
+    justify-items: center;
+    margin: 15px;
+}
